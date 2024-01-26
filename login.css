@@ -1,0 +1,158 @@
+body {
+    background-color: black;
+    padding: 20px;
+    margin: 0;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.t {
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.bar {
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.burger-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    display: none;
+    float: right;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.text {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    color: white;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.image {
+    width: 100%;
+    max-width: 400px;
+    padding-top: 11%;
+    overflow: hidden;
+    border-radius: 30px;
+    height: 200px;
+    background-image: url('./assets/risen-wang-20jX9b35r_M-unsplash\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+button {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: #ffdd00;
+}
+.be{
+    padding-top: 300px;
+}
+
+.be, .b {
+    width: 100%;
+    max-width: 1100px;
+    overflow: hidden;
+    border-radius: 30px;
+    margin: 20px auto; /* Center the container and add some margin */
+}
+
+.be img, .b img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: row;
+        /* text-align: center; */
+    }
+
+    .burger-icon {
+        display: block;
+        float: right;
+    }
+
+    .bar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: flex;
+        background-color: #ffdd00;
+        top: 60px;
+        left: 0;
+    }
+
+    .bar.show {
+        display: flex;
+    }
+
+    .bar li {
+        margin: 10px 0;
+    }
+    .be, .b {
+        margin-top: 80px; /* Adjust for the height of the navbar */
+    }
+
+    .text {
+        max-width: none;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .be, .b {
+        margin-top: 100px; /* Adjust for the height of the navbar */
+    }
+}
