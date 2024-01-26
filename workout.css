@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.t {
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.bar {
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.burger-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    display: none;
+    float: right;
+}
+.wer{
+    padding-top: 50px;
+}
