@@ -173,9 +173,9 @@ h5{
         font-size: 1em;
     }
 
-    h6 {
+    /* h6 {
         font-size: 0.8em;
-    }
+    } */
 
     .cona{
         width: 100%;
@@ -187,6 +187,7 @@ h5{
      top: 100%; /* Center the image vertically */
      transform: translateY(-50%); /* Center the image vertically */
      right: 40px; /* Adjust the right offset */
+     padding-bottom: 100px;
         }
         .last{
             margin-right: 50px;
@@ -211,6 +212,12 @@ h5{
         .fee{
             width: 100%;
             height: 200px;
+        }
+        h6{
+            font-size: 10px;
+            font-weight: bold;
+            padding-top: 0;
+            color: white;
         }
     }
 

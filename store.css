@@ -70,7 +70,7 @@ h6  , h4{
 
 .tees {
     width: 100%;
-    height: 180px;
+    /* height: auto; */
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
@@ -83,10 +83,9 @@ h6  , h4{
     box-sizing: border-box; /* Prevent padding from increasing the width */
 }
 .mate {
-    width: 30%;
+    width: 25%;
     max-width: 400px; /* Adjust the max-width as needed */
     box-sizing: border-box; /* Prevent padding from increasing the width */
-    margin-top: 35px;
 }
 
 .star {
@@ -100,7 +99,6 @@ h6  , h4{
 
 .tote {
     width: 60%;
-    height: 180px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -135,7 +133,7 @@ button{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; 
-    padding-top: 500px;
+    padding-top: 10px;
 }
 input {
     width: 1000px;
@@ -179,11 +177,11 @@ input {
     padding-top: 10px;
 }
 
-@media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) {
     .nav {
         flex-direction: row;
-        /* text-align: center; */
-    }
+         text-align: center; 
+    } 
 
     .burger-icon {
         display: block;
@@ -208,19 +206,61 @@ input {
     .bar li {
         margin: 10px 0;
     }
-
-    .last{
-        margin-right: 50px;
-        margin-left: 0px;
-        padding-left: 120px;
-        padding-right: 50px;
+    
+    .tee {
+        margin-top: 100px;
     }
-    input[type="text"],
-    input[type="email"],
-    input[type="text"]
-    textarea {
-        width:100% ;
-        max-width: 100%;
+    
+    .container, .tee, h6 {
+        max-width: 768px;
+        margin: auto;
+    }
+    
+    .tees {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 100px; /* Added margin for better separation */
+        
+    }
+    
+    .mat, .mate {
+        width: 45%;
+        max-width: 350px;
+        box-sizing: border-box;
+    }
+    
+    .star {
+        width: 10%;
+        height: 30px;
+        max-width: 50px;
+        overflow: hidden;
+        margin-top: 50px; /* Adjusted margin */
+        position: flex;
+    }
+    
+    .tote {
+        width: 45%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .gt {
+        width: 100%;
+        max-width: 350px;
+        overflow: hidden;
+        height: auto;
+        text-align: left;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    
+    button, input[type="text"], textarea {
+        width: 100%;
+        max-width: 350px;
         margin: 10px 0;
         padding: 10px;
         font-size: 16px;
@@ -228,13 +268,26 @@ input {
         border: 1px solid #ffdd00;
         box-sizing: border-box;
         color: white;
+        position: flex;
     }
-    .fee{
+    
+    .cona {
         width: 100%;
-        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
     }
-    .cona{
-        padding-top: 600px;
+    
+    .fee {
+        margin-top: 30px;
     }
 
-}
+    .text {
+        width: 100%;
+        max-width: 100%; 
+        box-sizing: border-box;
+    }
+
+    }
+    
