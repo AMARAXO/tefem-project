@@ -7,18 +7,18 @@ body {
 }
 
 .container {
-    width: 100%; /* Adjust as needed */
-     /* Max width for larger screens */
-    padding: 20px;
-}
-input {
     width: 100%;
-    max-width: 400px; /* Adjust the max-width as needed */
-    margin: 10px;
+    max-width: 1000px;
+}
+
+input[type="text"],
+input[type="checkbox"]{
+    width: 100%;
+    margin-bottom: 10px;
     padding: 20px;
     font-size: 14px;
     border-radius: 50px;
-    box-sizing: border-box; /* Prevent padding from increasing the width */
+    box-sizing: border-box;
 }
 .long input[type="text"] {
     width: 90%
@@ -33,11 +33,12 @@ input {
 }
 
 .form {
-    flex: 70%;
+    flex: 50%;
+    margin-left: 30px;
 }
 
 .summary {
-    flex: 50%;
+    flex: 30%;
     background-color: rgb(207, 206, 206);
 }
 .tees {
@@ -74,7 +75,8 @@ input {
 .logo{
     align-items: center;
     margin-left: 200px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 button {
     margin-bottom: 10px;
@@ -88,4 +90,106 @@ button {
 .rat{
     margin-bottom: 100px;
 }
-/* Other styles for form fields, buttons etc. */
+h6{
+    font-size: 15px;
+}
+.me a{
+    text-decoration: none;
+    color: black;
+}
+.paye a{
+    text-decoration: none;
+    color: black; 
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .form {
+        flex: 100%; /* Take up full width on smaller screens */
+        margin-left: 0; /* Remove left margin on smaller screens */
+        margin-top: 20px; /* Adjust top margin for smaller screens */
+    }
+
+    .summary {
+        flex: 100%; /* Take up full width on smaller screens */
+    }
+
+    .logo {
+        margin-left: 0; /* Remove left margin on smaller screens */
+        text-align: center; /* Center logo on smaller screens */
+    }
+
+    .rat {
+        margin-bottom: 50px; /* Adjust bottom margin for smaller screens */
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tees {
+        align-items: center; 
+    }
+    .summary{
+        padding-left: 10px;
+    }
+
+    .mat {
+        width: 100%; 
+        max-width: none; 
+        padding-top: 20px; 
+    }
+
+    .tote, .gt {
+        width: 100%; 
+        max-width: none; 
+        margin-right: 10px;
+    }
+
+    .rat {
+        margin-bottom: 50px; 
+    }
+}
+
+
+/* Existing CSS */
+
+@media screen and (max-width: 480px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tees {
+        align-items: center; /* Center items in the column layout */
+    }
+
+    .mat {
+        width: 50%; /* Adjust width */
+        max-width: none; /* Remove max-width */
+        padding-top: 20px; /* Adjust padding */
+    }
+
+    .tote, .gt {
+        width: 80%; /* Adjust width */
+        max-width: none; /* Remove max-width */
+    }
+
+    .rat {
+        margin-bottom: 50px; /* Adjust bottom margin */
+    }
+
+    .logo {
+        margin-left: 30px; /* Reset margin */
+    }
+}

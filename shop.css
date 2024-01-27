@@ -1,14 +1,15 @@
 .container {
     display: flex;
+    width: 100%;
 }
 
 .form {
-    flex: 70%;
+    flex: 50%;
     background-color: white;
 }
 
 .summary {
-    flex: 50%;
+    flex: 30%;
     background-color: rgb(207, 206, 206);
 }
 .tees {
@@ -59,15 +60,6 @@ button {
 .long input[type="text"] {
     width: 49%
 }
-/* input {
-    margin: 10px;
-    padding: 20px;
-    font-size: 12px;
-    border-radius: 50px;
-    box-sizing: border-box; 
-}  */
-
-
 
 input[type="checkbox"] {
     display: inline-block;
@@ -95,7 +87,7 @@ input[type="checkbox"] {
     margin-left: 10px;
 }
 .short{
-    width: 33%;
+    /* width: 33%; */
     display: inline;
     justify-content: space-between;
 }
@@ -106,16 +98,16 @@ input[type="checkbox"] {
     color: brown;
 }
 button {
-    
-    height: 30px;
-    font-size: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 14px;
     border-radius: 10px;
-    border: 2px solid black; /* Corrected border syntax */
-    background-color: #ffdd00;
+    box-sizing: border-box;
+    float: right;
+    background-color:#ffdd00 ;
+}
+.me a{
     color: black;
-    text-align: center;
-    cursor: pointer;
-
 }
 .pee{
     float: right;
@@ -131,4 +123,92 @@ button {
     display: inline-flex;
     justify-content: space-between;
 }
-/* Other styles for form fields, buttons etc. */
+.wipe{
+    flex-direction: left;
+    margin-left: 100px;
+}
+h6{
+    font-size: 20px;
+}
+.paye a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .form, .summary {
+        flex: 100%; 
+    }
+
+    .tees {
+        justify-content: center; 
+    }
+
+    .mat {
+        padding-top: 40px; 
+    }
+
+    .tote {
+        width: 100%; 
+    }
+
+    .gt {
+        padding-top: 50px; 
+    }
+    .logo{
+        align-items: center;
+        margin-left: 170px;
+    }
+
+    .wee {
+       
+       flex-direction: column; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction: column; 
+    }
+
+    .form, .summary {
+        flex: 100%; 
+    }
+
+    .tees {
+        justify-content: center; 
+    }
+
+    .mat {
+        padding-top: 40px; 
+    }
+
+    .tote {
+        width: 100%; 
+    }
+
+    .gt {
+        padding-top: 50px; 
+    }
+
+    .short, .long {
+        width: 100%; 
+    }
+
+    .logo{
+        align-items: center;
+        margin-left: 150px;
+    }
+
+
+    .wee {
+        flex-direction: column;
+    }
+}

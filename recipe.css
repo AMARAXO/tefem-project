@@ -14,6 +14,7 @@ h3 ,h4 ,h6{
     justify-content: space-around;
     /* align-items: center; */
     flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    margin-bottom: 150px;
 }
 
 .food {
@@ -81,7 +82,7 @@ button{
 
 }
 .recipe1{
-    padding-top: 250px;
+    padding-top: 50px;
 }
 .recipe2{
     padding-top: 20px;
@@ -180,12 +181,13 @@ h5{
 @media screen and (max-width: 768px) {
     .nav {
         flex-direction: row;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .burger-icon {
         display: block;
-        float: right;
+        /* float: right; */
+        margin-right: 10px;
     }
 
     .bar {
@@ -229,7 +231,7 @@ h5{
     
     .food {
         width: 100%; /* Adjusted to be responsive */
-        max-width: 400px;
+        max-width: 300px;
         box-sizing: border-box;
     }
     

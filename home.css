@@ -98,7 +98,7 @@ input {
     width: 100%;
     max-width: 400px; /* Adjust the max-width as needed */
     margin: 10px;
-    padding: 8px;
+    padding: 20px;
     font-size: 12px;
     border-radius: 50px;
     box-sizing: border-box; /* Prevent padding from increasing the width */

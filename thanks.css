@@ -45,3 +45,43 @@
     padding-left: 25px;
     margin-bottom: 40px;
 }
+
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: row;
+         text-align: center; 
+    } 
+
+    .burger-icon {
+        display: block;
+        float: right;
+        margin-right: 30px;
+    }
+
+    .bar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: flex;
+        background-color: #ffdd00;
+        top: 60px;
+        left: 0;
+    }
+
+    .bar.show {
+        display: flex;
+    }
+
+    .bar li {
+        margin: 10px 0;
+    }
+    .tha, .tra{
+        width: 340px;
+        margin-right: 10px;
+    }
+    .container{
+        width: 100%;
+        max-width: 600px;
+    }
+}

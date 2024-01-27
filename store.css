@@ -175,6 +175,7 @@ input {
 .cart a{
     text-decoration: none;
     padding-top: 10px;
+    color: white;
 }
 
  @media screen and (max-width: 768px) {
@@ -232,7 +233,7 @@ input {
     }
     
     .star {
-        width: 10%;
+        width: 20%;
         height: 30px;
         max-width: 50px;
         overflow: hidden;
@@ -241,7 +242,7 @@ input {
     }
     
     .tote {
-        width: 45%;
+        width: 80%;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -281,12 +282,19 @@ input {
     
     .fee {
         margin-top: 30px;
+        width: 300px;
     }
 
     .text {
         width: 100%;
         max-width: 100%; 
         box-sizing: border-box;
+    }
+
+    .last{
+        padding-left: 40%;
+        padding-right: 60%;
+        padding-top: 10px;
     }
 
     }
