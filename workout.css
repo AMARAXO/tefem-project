@@ -383,10 +383,11 @@ input {
     .flexbox {
         flex-direction: row; /* Stack items vertically */
         align-items: center; /* Center items horizontally */
+        height: auto;
     }
 
     .flexbox > .container {
-        width: 90%; /* Adjust width for smaller screens */
+        width: 100%; /* Adjust width for smaller screens */
     }
 
     .corosol {
