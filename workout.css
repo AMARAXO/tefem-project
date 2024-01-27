@@ -391,14 +391,15 @@ input {
     }
 
     .corosol {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: row; /* Stack items vertically */
         align-items: center; /* Center items horizontally */
-        height: 1000px;
+        width: 1000px;
+        height: 600px;
     }
 
     .con {
         /* flex-basis: unset; Reset flex-basis */
-        height: auto; /* Allow height to adjust */
+        height: 500px; /* Allow height to adjust */
     }
 
     .con > div {
@@ -426,7 +427,8 @@ input {
         padding-right: 10%; /* Adjust padding for smaller screens */
     }
     .fee{
-        width: 380px;
+        width: 250px;
+        height: 250px;
     }
 
 }
