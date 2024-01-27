@@ -2,7 +2,6 @@ body{
     background-color: black;
 }
 
-
 .nav {
     width: 100%;
     display: flex;
@@ -38,103 +37,58 @@ body{
     display: none;
     float: right;
 }
-
-ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    font-weight: 700;
-    color: white;
-}
-
-ul>li>a {
-    color: white;
-    text-decoration:  none;
-}
-ul>li>a.active{
-    text-decoration: underline #FFED00 2px;
-}
-.prep{
+.wa{
     width: 100%;
-    /* overflow: hidden; */
-    background-image: url('./assets/french.png');
+    background-image: url('./assets/Rectangle\ 51.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 1100px;
-    height: 400px;
-    position: relative;
+    border-radius: 30px;
 }
-.se{
-    position: absolute;
+.bee{
+    width: 950px;
 }
-.con {
-    width: 100%;
+
+.mot {
+    width: 20%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-    position: absolute;
-    top: 300px;
 }
-
-.f1 , .f2 ,.f3 {
-    /* max-width: 400px; Adjust the max-width as needed */
-    box-sizing: border-box; 
-    display: inline-block;
-    margin-left: 20px;
-    height: 80px;
-    align-items: left;
-
-}
-
-.f2 , .f3{
-    padding-right: 600px;
-}
-.f2{
-    margin-right: 0;
-    padding-right: 0;
-
-}
-
-.des {
+.container {
     width: 100%;
+    /* height: auto; */
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
     flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-    color: white;
-    padding-top: 50px;
+}
+.lap{
+    width: 200px;
 }
 
-.des1 , .des2 {
-    /* max-width: 400px; Adjust the max-width as needed */
-    box-sizing: border-box; 
-    display: inline-block;
-    margin-left: 20px;
-    height: 200px;
-    align-items: left;
+.day {
+    width: 70%;
+    margin-top: 100px;
+    
+}
+.fem{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 70px;
 
 }
-.des2{
-    padding-top: 30px;
-}
-h3 , h6{
-    color: white;
-}
-.step{
-    text-align: left;
-    padding-top: 200px;
-    color: white;
-    width: 100%;
-}
+
+
 .cona{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; 
+    padding-top: 10px;
 }
 input {
     width: 1000px;
@@ -170,17 +124,21 @@ input {
     padding-right: 40%;
     padding-top: 10px;
 }
+.fee{
+    margin-top: 30px;
+}
 h5{
     color: white;
-
 }
-
-
+H1{
+    color: white;
+    width: 100%;
+}
 @media screen and (max-width: 768px) {
     .nav {
         flex-direction: row;
-        /* text-align: center; */
-    }
+         text-align: center; 
+    } 
 
     .burger-icon {
         display: block;
@@ -205,24 +163,17 @@ h5{
     .bar li {
         margin: 10px 0;
     }
-    .des2{
-        padding-top: 300px;
+
+    .cona {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
     }
-    .step{
-        padding-top: 300px;
-    }
-    .last{
-        margin-right: 50px;
-        margin-left: 0px;
-        padding-left: 120px;
-        padding-right: 50px;
-    }
-    input[type="text"],
-    input[type="email"],
-    input[type="text"]
-    textarea {
-        width:100% ;
-        max-width: 100%;
+    button, input[type="text"], textarea {
+        width: 100%;
+        max-width: 350px;
         margin: 10px 0;
         padding: 10px;
         font-size: 16px;
@@ -230,40 +181,62 @@ h5{
         border: 1px solid #ffdd00;
         box-sizing: border-box;
         color: white;
+        position: flex;
     }
-    .fee{
-        width: 100%;
-        height: 200px;
-    }
-    .prep{
-        width: 100%;
-    }
-    .se{
-        width: 100%;
-    }
-    .con{
-       width: 100%;
-       height: auto; 
-       width: 100%;
-       display: flex;
-       justify-content: space-around;
-       align-items: center;
-       flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-       position: absolute;
-    top: 300px;
-    }
-    .f1,  .f2  .f3{
-        box-sizing: border-box; 
-        display: inline-block;
-        align-items: left;
-    }
-    .f2 , .f3{
-        padding-right: 5px;
-    }
-    .f2{
-        margin-right: 0;
-        padding-right: 0;
     
+    .fee {
+        margin-top: 30px;
+        width: 300px;
     }
 
-}  
+    .text {
+        width: 100%;
+        max-width: 100%; 
+        box-sizing: border-box;
+    }
+
+    .last{
+        padding-left: 40%;
+        padding-right: 60%;
+        padding-top: 10px;
+    }
+    .fem{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 100px; /* Added margin for better separation */
+        
+    }
+    .mot {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+        .star {
+            width: 60%;
+            height: 30px;
+            max-width: 50px;
+            overflow: hidden;
+            margin-top: 50px; /* Adjusted margin */
+            position: flex;
+        }
+
+        .bee{
+            width: 490px;
+        } 
+
+    
+    }
+     
+    /* .wa{
+        width: 300px;
+    } */ 

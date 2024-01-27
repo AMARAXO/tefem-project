@@ -76,7 +76,7 @@ button{
     box-sizing: border-box; 
     display: inline-block;
     width: 30%;
-    margin: 10px;
+    margin: 20px;
     height: 150px;
     align-items: center;
 
@@ -122,6 +122,23 @@ button{
     color: white;
     display: none;
     float: right;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    font-weight: 700;
+    color: white;
+}
+
+ul>li>a {
+    color: white;
+    text-decoration:  none;
+}
+ul>li>a.active{
+    text-decoration: underline #FFED00 2px;
 }
 
 .cona{

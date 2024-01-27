@@ -40,6 +40,23 @@ body {
     float: right;
 }
 
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    font-weight: 700;
+    color: white;
+}
+
+ul>li>a {
+    color: white;
+    text-decoration:  none;
+}
+ul>li>a.active{
+    text-decoration: underline #FFED00 2px;
+}
+
 .container {
     width: 100%;
     display: flex;

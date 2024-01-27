@@ -156,6 +156,10 @@ ul>li>a.active{
     background-color: #FFED00;
     color: black;
 }
+.bmta a{
+    text-decoration: none;
+    color: black
+}
 .BFF{
     width: 95%;
     margin: 30px auto;
@@ -292,6 +296,10 @@ ul>li>a.active{
     background-size: cover;
 }
 
+.bag a{
+    text-decoration: none;
+    color: white;
+}
 .cona{
     width: 100%;
     display: flex;
@@ -386,13 +394,8 @@ input {
         height: 1000px;
     }
 
-    /* .corosol > button {
-        position: static; /* Reset button position */
-        margin-top: 10px; /* Add space between buttons */
-    } */
-
     .con {
-        flex-basis: unset; /* Reset flex-basis */
+        /* flex-basis: unset; Reset flex-basis */
         height: auto; /* Allow height to adjust */
     }
 
